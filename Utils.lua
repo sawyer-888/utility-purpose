@@ -8,5 +8,10 @@ Utils.Network = require(script.NetworkUtils)
 Utils.UI = require(script.UIUtils)
 Utils.Pathfinding = require(script.PathfindingUtils)
 Utils.Debug = require(script.DebugUtils)
+Utils.Physics = require(script.PhysicsUtils)
+Utils.AI = require(script.AIUtils)
+Utils.Security = require(script.SecurityUtils)
+Utils.Serialization = require(script.SerializationUtils)
+Utils.Event = require(script.EventUtils)
 
 return Utils

@@ -15,4 +15,10 @@ function TableUtils.Shuffle(tbl)
     end
 end
 
+function TableUtils.Merge(t1, t2)
+    local merged = TableUtils.DeepCopy(t1)
+    for k, v in pairs(t2) do merged[k] = v end
+    return merged
+end
+
 return TableUtils

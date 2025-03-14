@@ -12,4 +12,11 @@ function InstanceUtils.RecursiveDestroy(obj)
     obj:Destroy()
 end
 
+function InstanceUtils.FindDescendantByName(root, name)
+    for _, child in ipairs(root:GetDescendants()) do
+        if child.Name == name then return child end
+    end
+    return nil
+end
+
 return InstanceUtils

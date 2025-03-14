@@ -9,4 +9,10 @@ function MathUtils.BezierCurve(p0, p1, p2, t)
     return u^2 * p0 + 2 * u * t * p1 + t^2 * p2
 end
 
+function MathUtils.MovingAverage(values, windowSize)
+    local sum, count = 0, math.min(#values, windowSize)
+    for i = #values - count + 1, #values do sum = sum + values[i] end
+    return sum / count
+end
+
 return MathUtils
